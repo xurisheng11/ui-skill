@@ -2,7 +2,7 @@
 
 ## 概述
 
-这是一个整理企业前端 UI 开发规范和实践样例的项目，基于 Luban 前端框架。
+这是一个整理企业前端 UI 开发规范和实践样例的项目，基于 Luban/AWS 前端框架。
 
 ## 目录结构
 
@@ -34,7 +34,7 @@ Base.successWrapper(
   content,           // 页面内容（BaseUI 组件）
   [jsFunctions],     // JS 函数数组（useEffect 等）
   ['className'],     // CSS 类名
-  [const_define]     // 变量定义数组
+  [const_define]    // 变量定义数组
 )
 ```
 
@@ -94,6 +94,36 @@ BaseUI.addSetting(field, {
 | `spaceBetween` | 布局容器 |
 | `markupItem` | 标记内容 |
 | `statusIndicator` | 状态指示器 |
+
+## AWS 组件列表
+
+| 组件 | 名称 | 描述 |
+| --- | --- | --- |
+| [[aws_wrapper]] | AWS 包装器 | 用于渲染aws组件，所有aws组件必须包裹在其中 |
+| [[aws_input]] | AWS 输入框 | 用于创建输入字段的组件 |
+| [[aws_box]] | AWS 盒子 | 用于创建具有边界和背景色的容器 |
+| [[aws_alert]] | AWS 警告框 | 用于显示通知消息 |
+| [[aws_badge]] | AWS 徽章 | 用于显示简短的信息摘要 |
+| [[aws_button]] | AWS 按钮 | 用于触发动作的标准按钮组件 |
+| [[aws_checkbox]] | AWS 复选框 | 复选框允许用户选择选项 |
+| [[aws_column_layout]] | AWS 列布局 | 列布局组件 |
+| [[aws_container]] | AWS 容器 | 呈现一组内容片段 |
+| [[aws_date_picker]] | AWS 日期选择器 | 用户可以选择日期 |
+| [[aws_form_field]] | AWS 表单字段 | 在表单中创建样式正确的控件 |
+| [[aws_header]] | AWS 头 | 总结显示在它下面的内容 |
+| [[aws_link]] | AWS 链接 | 链接组件 |
+| [[aws_modal]] | AWS 模态框 | 模态窗口组件 |
+| [[aws_select]] | AWS 下拉框 | 从列表中选择单个项目 |
+| [[aws_multi_select]] | AWS 多选下拉框 | 从列表中选择多个项目 |
+| [[aws_text_area]] | AWS 多行文本框 | 多行纯文本输入控件 |
+| [[aws_tabs]] | AWS 选项卡 | 在不同类别信息之间切换 |
+| [[aws_toggle]] | AWS 开关 | 打开或关闭选项 |
+| [[aws_table]] | AWS 表格 | 以二维表格格式显示数据 |
+| [[aws_cards]] | AWS 卡片 | 以卡片格式显示数据 |
+| [[aws_offcanvas]] | AWS 弹出框 | 页面右侧弹出信息 |
+| [[aws_attribute_editor]] | AWS 属性编辑器 | 创建、编辑和删除资源属性 |
+| [[aws_progress_bar]] | AWS 进度条 | 显示操作进度 |
+| [[aws_status_indicator]] | AWS 状态指示器 | 传达资源的状态 |
 
 ## 开发流程
 
